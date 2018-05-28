@@ -9,20 +9,21 @@
       background-size: 100% 1000%;
       background-repeat: no-repeat;
     }
-    h1,p{
+    body{
       color: white;
     }
     </style>
 </head>
 <body onclick="gogogo()">
-<h1>我就想试试h1是什么标题</h1>
-<p>我希望能看到图片</p>
-
+今天陆包包是什么样子的？
+她有
+<span id="mynumber">1</span>
+点点愚蠢
 </body>
 <script>
-  var number = 0;
+  var number = 1;
   function gogogo(){
-    alert('number='+number);
+    document.getElementById("mynumber").innerHTML=number;
     number = number+1;
   }
   </script>
