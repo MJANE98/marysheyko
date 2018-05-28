@@ -15,13 +15,14 @@
     }
     </style>
 </head>
-<body ontouch="gogogo()">
+<body>
 今天陆包包是什么样子的？
 <p>她有</p>
 <span id="mynumber">1</span>
 点点愚蠢
 </body>
 <script>
+  document.body.addEventListener('touchstart',gogogo);
   var number = 1;
   function gogogo(){
     document.getElementById("mynumber").innerHTML=number;
