@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            height:100%;
+        }
+    </style>
+
+</head>
+<body onclick="go();">
+
+</body>
+<script>
+    function go(){
+        alert("认真你就输了")；
+        alert(123)
+        alert(456)
+    }
+</script>
+</html>
