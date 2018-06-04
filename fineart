@@ -15,7 +15,7 @@
 </body>
 <script>
     function go(){
-        alert("认真你就输了")；
+        alert("认真你就输了");
         alert(123)
         alert(456)
     }
