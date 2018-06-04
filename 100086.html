@@ -6,6 +6,7 @@
     <style>
         html,body{
             height:100%;
+            font-size:200px;
         }
     </style>
 
@@ -14,10 +15,16 @@
 
 </body>
 <script>
+    var num=1;
     function go(){
-        alert("认真你就输了");
-        alert(123)
-        alert(456)
+        if(num%7==0){
+            document.body.innerHTML="过";
+        }
+        else{
+            document.body.innerHTML=num;
+        }
+
+        num=num+1;
     }
 </script>
 </html>
