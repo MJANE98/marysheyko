@@ -5,7 +5,7 @@
     <title>Title</title>
     <style>
         body{
-             background-image: url('images/rotary.jpg');
+            background-image: url('images/rotary.jpg');
         }
         p{
             font-size:200px;
@@ -24,7 +24,7 @@
 <body">
 <div id="janny"></div>
 <p>
-wonderful
+    wonderful
     wonderful
     wonderful
     wonderful
@@ -45,5 +45,19 @@ wonderful
     audio.src="bgm.mp3";
     audio.play();
     audio.loop="loop";
+    document.getElementById("janny").addEventListener("click",music);
+    var isplaying=true;
+
+    function music(){
+        if(isplaying){
+            audio.pause();
+            document.getElementById("janny").style.backgroundImage="url('stop.gif')"
+
+        }
+        else{
+            audio.play();
+            document.getElementById("janny").style.backgroundImage="url('images/音符.gif')"
+        }
+    }
 </script>
 </html>
