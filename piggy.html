@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #stage{
+            height:400px;
+            width:550px;
+            background-image:url("stageSelect/images/rainy.gif");
+        }
+        #rain,#storm,#blizzard{
+            width:100px;
+            height:30px;
+            float:left;
+            color:white;
+        }
+        body{
+            magin:0;
+        }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <div id="rain" onclick="rainy()">小</div>
+    <div id="storm" onclick="storm()">中</div>
+    <div id="blizzard" onclick="blizzard()">大</div>
+</div>
+<div id="stage"></div>
+</body>
+<script>
+   function rainy(){
+       document.getElementById("stage").style.backgroundImage="url('stageSelect/images/rainy.gif')";
+   }
+   function storm(){
+       document.getElementById("stage").style.backgroundImage="url('stageSelect/images/storm.gif')";
+   }
+   function blizzard(){
+       document.getElementById("stage").style.backgroundImage="url('stageSelect/images/blizzard.gif')";
+   }
+</script>
+</html>
